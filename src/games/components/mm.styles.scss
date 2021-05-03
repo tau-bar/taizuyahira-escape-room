@@ -1,0 +1,32 @@
+.mm-section {
+    margin-top : 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.mm-text{
+    margin: 20px;
+
+}
+
+.mm-answer{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    height: 500px;
+    width: 500px;
+}
+
+.answer {
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.answer-big {
+    height: 50px;
+    padding: 20px;
+}
