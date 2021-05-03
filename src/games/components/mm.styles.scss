@@ -5,28 +5,13 @@
     flex-direction: row;
 }
 
-.mm-text{
-    margin: 20px;
-
-}
-
-.mm-answer{
+.mm-answer {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .photo {
-    height: 500px;
-    width: 500px;
-}
-
-.answer {
-    height: 20px;
-    padding: 10px;
-    margin-bottom: 50px;
-}
-
-.answer-big {
-    height: 50px;
-    padding: 20px;
+    height: 400px;
+    width: 400px;
 }

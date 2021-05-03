@@ -1,27 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './mm.styles.scss';
+import TextField from '@material-ui/core/TextField';
 
-const MmComponent = ({ componentInput, handleAns ,ansInput, numPassed, handleNumAns, passed, img, currentLevel, handler }) => (
+
+const MmComponent = ({ correctNum, correctAns, handleAns, handleNumAns, img, id }) => {
+    return (
     <div>
-        <div className = 'mm-text'>
-            find out who is the murderer scum.
-        </div>
-
         <div className = 'mm-section'>
             <img className = 'photo' src = {img}></img>
             <div className = 'mm-answer'>
-                <label>Who is the murderer?</label>
-                <input value = {ansInput} onChange = {handleNumAns} className = 'answer' placeholder="Enter number here"></input>
-                
-                <label>Why?</label>
-                <textarea onChange = {handleAns} value = {componentInput} className = 'answer-big' placeholder="Enter reason here"></textarea>
-                {numPassed && passed && <button onClick = {handler}>proceed...</button>}
-                
+                <TextField id = {id} label="Number here" variant="outlined" onChange = {e => handleNumAns(e, id)} placeholder="Enter number here"></TextField>
+                <TextField id = {id} label="Reason" variant="outlined" onChange = {e => handleAns(e, id)} placeholder="Enter reason here"></TextField>
             </div>
         </div>
         
 
     </div>
-)
+)}
 
 export default MmComponent;
