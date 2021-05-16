@@ -1,27 +1,25 @@
 import './App.css';
-import IntroPage from './games/introduction.component';
-import CrosswordPage from './games/crossword.component';
-import RiddlesPage from './games/riddles.component';
+import Header from './games/components/header/header.component';
+import IntroPage from './games/pages/intro-page/introduction.component';
+import CrosswordPage from './games/pages/crossword/crossword.component';
+import RiddlesPage from './games/pages/unscramble/riddles.component';
 import LetterPuzzlePage from './games/letterpuzzle.component';
-import FindMurdererPage from './games/findmurderer.component';
+import FindMurdererPage from './games/pages/find-murderer/findmurderer.component';
 import { Route, Switch } from 'react-router-dom';
 
 
 function App() {
   return (
-    <div>
+    <div class = 'page-body'>
+    <Header/>
       <Switch>
         <Route exact path = '/' component={IntroPage} />
-        <Route exact path = '/challenge1' component={CrosswordPage} />
-        <Route exact path = '/challenge2' component={RiddlesPage} />
-        <Route exact path = '/challenge3' component={LetterPuzzlePage} />
-        <Route exact path = '/challenge4' component={LetterPuzzlePage} />
-        <Route exact path = '/challenge5' component={LetterPuzzlePage} />
-        <Route exact path = '/challenge6' component={LetterPuzzlePage} />
-        <Route exact path = '/challenge7' component={LetterPuzzlePage} />
-        <Route exact path = '/challenge8' component={FindMurdererPage} />
-        <Route exact path = '/challenge9' component={LetterPuzzlePage} />
-        <Route exact path = '/challenge10' component={LetterPuzzlePage} />
+        <Route exact path = '/crossroads' component={CrosswordPage} />
+        <Route exact path = '/c2' component={RiddlesPage} />
+        <Route exact path = '/c3' component={LetterPuzzlePage} />
+        <Route exact path = '/unforgiving-soul' component={FindMurdererPage} />
+        <Route exact path = '/c5' component={LetterPuzzlePage} />
+        <Route exact path = '/c6' component={LetterPuzzlePage} />
         <Route exact path = '/finished' component={LetterPuzzlePage} />
       </Switch>
     </div>

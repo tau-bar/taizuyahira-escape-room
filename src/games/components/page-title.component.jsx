@@ -1,9 +1,9 @@
 import React from 'react';
 import './page-title.styles.scss';
 
-const PageTitle = ({ content }) => (
+const PageTitle = ({ children }) => (
     <div className = "page-title">
-        {content}
+        {children}
     </div>
 )
 

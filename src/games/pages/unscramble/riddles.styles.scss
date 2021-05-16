@@ -1,0 +1,19 @@
+.unscramble {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 25vw;
+    width: 150vw;
+    background-color: beige;
+    text-align: center;
+    height: 77.5vh;
+    
+    
+    .code {
+        position: absolute;
+        color: beige;
+        right: 10vw;
+    }
+}
+

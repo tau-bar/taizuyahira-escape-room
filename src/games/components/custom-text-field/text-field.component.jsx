@@ -1,37 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './text-field.styles.scss';
+import TextField from '@material-ui/core/TextField';
+import green from '@material-ui/core/colors/green';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { InputLabel } from '@material-ui/core';
 
-const CssTextField = withStyles({
-    root: {
-      '& label.Mui-focused': {
-        color: 'green',
-      },
-      '& .MuiInput-underline:after': {
-        borderBottomColor: 'green',
-      },
-      '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-          borderColor: 'red',
-        },
-        '&:hover fieldset': {
-          borderColor: 'yellow',
-        },
-        '&.Mui-focused fieldset': {
-          borderColor: 'green',
-        },
+const CustomTextField = ({ correct, onChange, label, placeholder, helperText }) => {
+  const [ht,  setHt] = useState(false);
+  const theme = createMuiTheme({
+    palette: {
+      primary: {
+          main: green[700],
       },
     },
-  })(TextField);
-
-const TextField = ({ correct, onChange, label, placeholder }) => (
-
+  });
+  return(
+    <ThemeProvider theme = {theme}>
     <TextField 
-    label = {label} 
-    variant="outlined" 
-    onChange = {onChange} 
-    placeholder= {placeholder}
-    className = "custom-text-field"
-    ></TextField>
-)
+      color = {correct ? "primary" : "secondary"} 
+      label={label}
+      variant="outlined" 
+      onChange = {onChange} 
+      onFocus = {() => console.log("test")}
+      placeholder={placeholder}>
+    </TextField>
+    <p class = 'helper-text'>{helperText}</p>
+    </ThemeProvider>
+)}
 
-export default TextField;
+export default CustomTextField;
