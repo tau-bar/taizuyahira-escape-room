@@ -27,7 +27,7 @@ class FindMurdererPage extends React.Component {
     }
 
   handleNumAns(event, id) {
-    if (id === "0") {
+    if (id === "2100") {
         if (event.target.value === "4") {
             this.setState({
                 numPassed1: true,
@@ -53,7 +53,7 @@ class FindMurdererPage extends React.Component {
   handleAns(event, id) {
     var acceptedwords1 = /torn shirt|shirt tear/;
     var acceptedwords2 = /left hand|cast can hide weapon/;
-    if (id === "0") {
+    if (id === "2100") {
         if (acceptedwords1.test(event.target.value)) {
             this.setState({ passed1 : true });
         } else {
