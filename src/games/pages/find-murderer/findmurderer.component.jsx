@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import mm1 from '../../../stuff/mm1.jpg';
 import mm2 from '../../../stuff/mm2.jpg';
-import MmComponent from '../../components/mm.component';
+import MmComponent from '../../components/mm-component/mm.component';
 import PageTitle from '../../components/page-title.component';
 import Paragraph from '../../components/paragraph.component';
 import './findmurderer.styles.scss';
@@ -26,8 +26,8 @@ class FindMurdererPage extends React.Component {
     }
 
   handleNumAns(event, id) {
-    if (id == "0") {
-        if (event.target.value == "4") {
+    if (id === "0") {
+        if (event.target.value === "4") {
             this.setState({
                 numPassed1: true,
             })
@@ -37,7 +37,7 @@ class FindMurdererPage extends React.Component {
             })
         }
     } else {
-        if (event.target.value == "3") {
+        if (event.target.value === "3") {
             this.setState({
                 numPassed2: true,
             })
@@ -52,7 +52,7 @@ class FindMurdererPage extends React.Component {
   handleAns(event, id) {
     var acceptedwords1 = /torn shirt|shirt tear/;
     var acceptedwords2 = /left hand|cast can hide weapon/;
-    if (id == "0") {
+    if (id === "0") {
         if (acceptedwords1.test(event.target.value)) {
             this.setState({ passed1 : true });
         } else {

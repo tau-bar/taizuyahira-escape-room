@@ -1,0 +1,19 @@
+.answer-tile {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    height: 4.8vw;
+    width: 4.8vw;
+    justify-content: center;
+    margin: 0px;
+    background-color: #dbc39d;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Itim', cursive;
+    
+    
+}
+
+.answer-tile:focus {
+    background-color: yellow;
+}

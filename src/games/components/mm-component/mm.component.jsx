@@ -16,7 +16,7 @@ const MmComponent = ({ correctNum, correctAns, handleAns, handleNumAns, img, id 
     return (
     <div>
         <div className = 'mm-section'>
-            <img className = 'photo' src = {img}></img>
+            <img alt = "murder-mystery" className = 'photo' src = {img}></img>
             <div className = 'mm-answer'>
             <ThemeProvider theme = {theme}>
                 <TextField color = {correctNum ? "primary" : "secondary"} helperText="who did it?" id = {id} label="number here" variant="outlined" onChange = {e => handleNumAns(e, id)} placeholder="enter number here"></TextField>

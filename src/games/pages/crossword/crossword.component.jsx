@@ -7,7 +7,7 @@ import './crossword.styles.scss';
 import CustomButton from '../../components/button/button.component';
 import { ThemeProvider } from 'styled-components'
 import { Button } from '@material-ui/core';
-import cave from '../../../stuff/cave2.jpg';
+import cave from '../../../stuff/cave4.jpg';
  
 const data = {
     across: {
@@ -109,8 +109,8 @@ const CrosswordPage = ({ history }) => {
     }
     return (
         <div className = "crossword">
-            <PageTitle>crossroads</PageTitle>
-            <img src = {cave} style={{width:"70vw", borderRadius:"10px"}}/>
+            <PageTitle>the crossroads</PageTitle>
+            <img alt = "cave" src = {cave} style={{width:"70vw", borderRadius:"10px"}}/>
             <Paragraph content="You enter the cave and a stone door shuts close. *how eerie…* .There is a map on the floor. On the map are tiles representing the inner structure of the cave, as well as some hints. Beside the map, there was also a big stick (presumably for drawing on the ground). At the end of the cave, there are stone doors which are sealed shut. You rack your brain as you try to figure out what to do..."></Paragraph>
             <div className = 'puzzle'>
             <ThemeProvider theme = {theme}>
