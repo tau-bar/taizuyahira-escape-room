@@ -18,12 +18,12 @@ function App() {
       <Switch>
         <Route exact path = '/' component={IntroPage} />
         <Route exact path = '/crossroads' component={CrosswordPage} />
-        <Route exact path = '/c2' component={RiddlesPage} />
-        <Route exact path = '/c3' component={LetterPuzzlePage} />
+        <Route exact path = '/mix-up' component={RiddlesPage} />
+        <Route exact path = '/a-message' component={LetterPuzzlePage} />
         <Route exact path = '/unforgiving-soul' component={FindMurdererPage} />
-        <Route exact path = '/c5' component={SudokuPage} />
-        <Route exact path = '/c6' component={QuestionsPage} />
-        <Route exact path = '/finished' component={Finished} />
+        <Route exact path = '/attachment-to-the-past' component={SudokuPage} />
+        <Route exact path = '/quizaster' component={QuestionsPage} />
+        <Route exact path = '/a-scroll' component={Finished} />
       </Switch>
     </div>
   );

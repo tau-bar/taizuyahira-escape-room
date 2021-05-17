@@ -18,8 +18,7 @@ const test = [["L", "H", "C", "N", "A", "M", ["K", 1000], "E", "B"],
 const Sudoku = ({ handlePass }) => {
     var answers = [false, false, false, false, false, false, false, false];
     const handleChange = (event, answer, index) => { 
-        console.log(answers);
-        if (event.target.value === answer) {
+        if (event.target.value.toUpperCase() === answer) {
             answers[index - 1000] = true;
         } else {
             answers[index - 1000] = false;

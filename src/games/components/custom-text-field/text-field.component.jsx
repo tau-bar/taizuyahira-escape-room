@@ -26,16 +26,20 @@ const CustomTextField = ({ successPara, failPara, nextRoute, history, answer, mu
     <div className = "custom-text-field">
     <ThemeProvider theme = {theme} >
     <TextField 
-    multiline = {multiline}
+      multiline = {multiline}
       color = {correct ? "primary" : "secondary"} 
       label={label}
       variant="outlined" 
       onChange = {onChange} 
       placeholder={placeholder}
       rows={4}
-      className = "custom-text-field">
-    </TextField>
-    <p class = 'helper-text'>{helperText}</p>
+      inputProps={{style: {fontFamily: 'Itim'}}} 
+      InputLabelProps={{style: {fontFamily: 'Itim'}}}
+      className = "custom-text-field"
+      FormHelperTextProps = {{style: {fontFamily: 'Itim'}}}
+      helperText = "Capitalization is not important."/>
+      
+    <p className = 'helper-text'>{helperText}</p>
     </ThemeProvider>
     <CustomButton
           passed = {correct}

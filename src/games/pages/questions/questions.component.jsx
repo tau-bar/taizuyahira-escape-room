@@ -14,7 +14,7 @@ const QuestionsPage = ({ history }) => {
     const [correct4, setCorrect4] = useState(false);
     return (
         <div className = 'template-div'>
-            <PageTitle>question title</PageTitle>
+            <PageTitle>a quizaster</PageTitle>
             <Paragraph content = "After you completed the puzzle, you felt confident of your intelligence. But just when things seemed great, a troll appears." ></Paragraph>
             <img alt = "troll" src = {troll} style={{height:"50vh", borderRadius:"10px"}}></img>
             <Paragraph content = "'You think you’re so smart? Answer these questions and you can pass. My FIRST and only advice is: you must pay close attention.'" ></Paragraph>
@@ -23,14 +23,14 @@ const QuestionsPage = ({ history }) => {
             <Paragraph content = "What type of flower is the Singapore’s National Flower aka Vanda Miss Joaquim?" ></Paragraph>
             <TF correct = {correct2} onChange = {e => {setCorrect2(e.target.value.toLowerCase() === "orchid")}} ></TF>
             <Paragraph content = "What is a fruit and also a colour?" ></Paragraph>
-            <TF correct = {correct4} onChange = {e => {setCorrect4(e.target.value.toLowerCase() === "orchid")}} ></TF>
+            <TF correct = {correct4} onChange = {e => {setCorrect4(e.target.value.toLowerCase() === "orange")}} ></TF>
             <Paragraph content = "What is the longest river in the world?" ></Paragraph>
-            <TF correct = {correct3} onChange = {e => {setCorrect3(e.target.value.toLowerCase() === "orchid")}} ></TF>
+            <TF correct = {correct3} onChange = {e => {setCorrect3(e.target.value.toLowerCase() === "nile")}} ></TF>
             <CustomButton
             passed = {correct1 && correct2 && correct3 && correct4}
-            successPara = "The troll says : 'you indeed are smart enough'"
-            failPara = "The troll mocks your intelligence... *sigh*"
-            onClick = {() => history.push("/finished")} ></CustomButton>
+            successPara = "The troll acknowledges your intelligence."
+            failPara = "The troll mocks and laughs your intelligence, or rather the lack of it! ... *sigh*"
+            onClick = {() => history.push("/a-scroll")} ></CustomButton>
         </div>
     )
 }

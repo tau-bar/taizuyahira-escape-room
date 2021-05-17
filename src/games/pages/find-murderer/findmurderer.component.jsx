@@ -7,6 +7,7 @@ import PageTitle from '../../components/page-title.component';
 import Paragraph from '../../components/paragraph.component';
 import './findmurderer.styles.scss';
 import CustomButton from '../../components/button/button.component';
+import spirit from '../../../stuff/spirit2.jpg'
 
 const images = [mm1, mm2];
 class FindMurdererPage extends React.Component {
@@ -67,13 +68,17 @@ class FindMurdererPage extends React.Component {
     }
   }
     render() {
-        const toNext = () => {this.props.history.push('/challenge9')};
+        const toNext = () => {this.props.history.push('/attachment-to-the-past')};
         const { numPassed1, numPassed2, ansInput, passed1, passed2 } = this.state;
         return (
             <div className = "mm-page">
             <div className = 'page-text'>
                 <PageTitle>the unforgiving soul</PageTitle>
-                <Paragraph content = "As you proceed, an apparition manifests in front of you. It's Taizuyahira, in the *flesh*? It says to you, 'Traveller... in my absence my brother and sister were murdered ... and I wish to take revenge on thsoe who did it. I have drawings of the location at the time they were murdered, but I cannot figure out who did in my brother and sister. Find out who the murderers are... or else...'. You scramble to try and figure out who the murderers are lest the spirit ends your life there, but ... the answer is not obvious! Find out who did it."/>
+                <Paragraph content = "You proceed having shown that you have some intelligence. Taizuyahira's spirit then begins to wail, then scream in agony."/>
+                <img style={{width:"40vw", borderRadius:"10px"}} alt = "cave" src = {spirit}></img>
+                <Paragraph content = "'Traveller, in my absence in this world, my brother and sister have had their lives brutally ended. Find out who did my siblings in so that I can end their lives. If you can't... I'll end yours.'"></Paragraph>
+                <Paragraph content = "On the walls you see two images... this must be the memory captured by the spirit. You scratch your head as you wonder where to even begin..." ></Paragraph>
+
             </div>
         <MmComponent 
             correctNum = {numPassed1}
@@ -82,7 +87,7 @@ class FindMurdererPage extends React.Component {
             ansInput = {ansInput} 
             handleNumAns = {this.handleNumAns} 
             img = {images[0]} 
-            id = "0"/>
+            id = "2100"/>
         <MmComponent 
             correctNum = {numPassed2}
             correctAns = {passed2}
@@ -90,15 +95,14 @@ class FindMurdererPage extends React.Component {
             ansInput = {ansInput} 
             handleNumAns = {this.handleNumAns} 
             img = {images[1]} 
-            id = "1"/>
+            id = "2200"/>
             
         <div className = "proceed-button">
             <CustomButton 
             onClick = {toNext}
             passed = {passed1 && passed2 && numPassed1 && numPassed2}
-            // passed = {true}
-            successPara = "the spirit is satisfied, leave before it changes it's mind!"
-            failPara = "the spirit is unsatisfied, you may not proceed."
+            successPara = "Taizuyahira's spirit is satisfied, leave before it changes it's mind!"
+            failPara = "Taizuyahira's spirit is unsatisfied, you may not proceed."
             ></CustomButton>
         </div>
         </div>)

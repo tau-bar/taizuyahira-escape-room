@@ -101,7 +101,7 @@ const CrosswordPage = ({ history }) => {
         }, 200);
     }
     const toNext = () => {
-        history.push('/c2');
+        history.push('/mix-up');
     }
     
     const theme = {
@@ -124,7 +124,7 @@ const CrosswordPage = ({ history }) => {
             <Button onClick = {() => crosswordRef.current.reset()} variant="contained" color="secondary">
               reset
             </Button>
-            <CustomButton onClick = {toNext} passed = {solved} failPara = "the stone doors are closed shut" successPara = "the stone doors open..."/>
+            <CustomButton onClick = {toNext} passed = {solved} failPara = "The stone doors are closed shut." successPara = "The stone doors open..."/>
         </div>
     )
 }

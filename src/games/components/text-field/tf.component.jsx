@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import green from '@material-ui/core/colors/green';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
-const TF = ({ onChange, correct, multiline, label, placeholder, helperText }) => {
+const TF = ({ onChange, correct, helperText }) => {
   const theme = createMuiTheme({
     palette: {
       primary: {
@@ -15,16 +15,18 @@ const TF = ({ onChange, correct, multiline, label, placeholder, helperText }) =>
     <div className = "custom-text-field">
     <ThemeProvider theme = {theme} >
     <TextField 
-        multiline = {multiline}
+        inputProps={{style: {fontFamily: 'Itim'}}} 
+        InputLabelProps={{style: {fontFamily: 'Itim'}}}
+        FormHelperTextProps = {{style: {fontFamily: 'Itim'}}}
+        helperText = "Capitalization is not important."
         color = {correct ? "primary" : "secondary"} 
-        label={label}
         variant="outlined" 
         onChange = {onChange} 
-        placeholder={placeholder}
+        label="Answer the question."
         rows={4}
       className = "custom-text-field">
     </TextField>
-    <p class = 'helper-text'>{helperText}</p>
+    <p className = 'helper-text'>{helperText}</p>
     </ThemeProvider>
     </div>
   )

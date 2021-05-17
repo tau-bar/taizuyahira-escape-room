@@ -10,19 +10,22 @@ import '../template.styles.scss';
 const LetterPuzzlePage = ({ history }) => (
     <div className = 'template-div'>
         <PageTitle>a message</PageTitle>
-        <Paragraph content = "You walked past what seems to be a familiar plank full of unknown runes. The walls suddenly shine 2 rows runes as if they were trying to tell you something."></Paragraph>
+        <Paragraph content = "You proceed having passed the first trial. Taizuyahira's spirit tails you and proceeds to ask:"></Paragraph>
+        <Paragraph content = "'Now, to understand sage knowledge you have to have a certain level of intelligence... do you possess that, traveller?'"></Paragraph>
+        <Paragraph content = "You walk past what seems to be a plank full of unknown runes. The walls suddenly shine 2 rows runes as if they were trying to tell you something."></Paragraph>
         <Paragraph content ="ᛏᚻᛖ ᛋᛏᚩᚾᛖ ᚻᚪᛋ ᛒᛖᛖᚾ ᛋᛏᚩᛚᛖᚾ."></Paragraph>
         <Paragraph content = " ᚠᛁᚾᛞ ᛏᚻᛖ ᛏᚻᛁᛖᚠ."></Paragraph>
-        <Paragraph content = "Something here"></Paragraph>
+        <Paragraph content = "It seems that the plank and runes replicate something you use for your own daily tasks."></Paragraph>
         <img alt = "code" src = {coded} style={{width:"70vw", borderRadius:"10px"}} ></img>
+        <Paragraph content = "What do the walls tell you?"></Paragraph>
         <CustomTextField 
-        successPara = "you have been chosen. complete this mission."
-        failPara = "improve thy reading of runes."
+        successPara = "You have been chosen. Proceed with the mission."
+        failPara = "Improve thy reading of runes."
         multiline = {true}
         answer = "the stone has been stolen. find the thief."
-        helperText = "Put a space between the two sentences, and end each row with a fullstop. Capitalization does not matter."
+        helperText = "Put a space between the two sentences, and end each row with a fullstop."
         nextRoute = "unforgiving-soul"
-        label = "decrypted message"/>
+        label = "Decrypt the mesage."/>
     </div>
 )
 
