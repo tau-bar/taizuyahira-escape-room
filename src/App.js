@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Header from './games/components/header/header.component';
 import IntroPage from './games/pages/intro-page/introduction.component';
 import CrosswordPage from './games/pages/crossword/crossword.component';
@@ -13,7 +14,7 @@ import Finished from './games/pages/finished/finished.component';
 
 function App() {
   return (
-    <div className = 'page-body'>
+    <div className = {`page-body`}>
     <Header/>
       <Switch>
         <Route exact path = '/' component={IntroPage} />

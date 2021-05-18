@@ -4,7 +4,7 @@ import logo from '../../../stuff/tzy-logo.jpg';
 
 const Header = () => {
     return (
-        <div className = 'header'>
+        <div className = {`header`}>
             <img alt = "legendeus logo" className='logo' src ={logo}></img>
         </div>
     )
