@@ -51,8 +51,8 @@ class FindMurdererPage extends React.Component {
   }
 
   handleAns(event, id) {
-    var acceptedwords1 = /torn shirt|shirt tear/;
-    var acceptedwords2 = /left hand|cast can hide weapon/;
+    var acceptedwords1 = /torn shirt|shirt tear|red shirt|no knife/;
+    var acceptedwords2 = /left hand|weapon cast/;
     if (id === "2100") {
         if (acceptedwords1.test(event.target.value)) {
             this.setState({ passed1 : true });

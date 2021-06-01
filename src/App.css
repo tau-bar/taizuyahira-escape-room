@@ -1,12 +1,5 @@
 .page-body {
   background-color: beige;
   color: black;
-}
-
-@media screen and (-ms-high-contrast: active) {
-  .page-body {
-    background-color: beige;
-    color: black;
-  }
-  
+  /* font-size: 3rem; */
 }

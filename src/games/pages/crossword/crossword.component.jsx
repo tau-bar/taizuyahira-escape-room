@@ -19,9 +19,9 @@ const data = {
         },
         2: {
           clue: 'Treat others how you want to be treated. This saying is also known as The G_ _ _ _ _ _    _ _ _ _.',
-          answer: 'GOLDEN-RULE',
+          answer: 'GOLDENRULE',
           row: 4,
-          col: 3,
+          col: 4,
         },
         3: {
           clue: 'A question',
@@ -67,7 +67,7 @@ const data = {
         },
         10: {
           clue: 'Already seen before',
-          answer: 'DEJA-VU',
+          answer: 'DEJAVU',
           row: 12,
           col: 7,
         },
