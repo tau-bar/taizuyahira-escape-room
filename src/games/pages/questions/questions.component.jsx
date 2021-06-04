@@ -27,7 +27,10 @@ const QuestionsPage = ({ history }) => {
             <TF correct = {correct4} onChange = {e => {setCorrect4(e.target.value.toLowerCase() === "elements")}} ></TF>
             <Paragraph content = "Which pandemic virus originated from West Africa?" ></Paragraph>
             <TF correct = {correct3} onChange = {e => {setCorrect3(e.target.value.toLowerCase() === "ebola")}} ></TF>
-            <Paragraph content = "Finally, what is the secret code?"></Paragraph>
+            <Paragraph content = "You answer the questions confidently, but something seems off... those questions were just TOO easy! The troll smirks and begins mocking you:"/>
+            <Paragraph content = "'Ha! You seriously think those easy questions were the test? Think again. What's the secret code?'"/>
+            <Paragraph content = "You think to yourself ... what could the secret code be?"/>
+            <Paragraph content = "What is the secret code?"></Paragraph>
             <TF correct = {correct5} onChange = {e => {setCorrect5(e.target.value.toLowerCase() === "tree")}} ></TF>
             <CustomButton
             passed = {correct1 && correct2 && correct3 && correct4 && correct5}
