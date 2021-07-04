@@ -25,6 +25,11 @@ function App() {
         <Route exact path = '/attachment-to-the-past' component={SudokuPage} />
         <Route exact path = '/quizaster' component={QuestionsPage} />
         <Route exact path = '/a-scroll' component={Finished} />
+        <Route path='/case-file' component={() => { 
+          window.location.href = 'https://drive.google.com/file/d/1XwdO3fc_bKfSO4A6z_YbOgqYqyehgOAY/view?usp=sharing'; 
+          return null;
+     }}/>
+     
       </Switch>
     </div>
   );

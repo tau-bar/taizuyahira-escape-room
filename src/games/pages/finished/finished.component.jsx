@@ -6,7 +6,7 @@ import scroll from '../../../stuff/scroll.jpg';
 import PageTitle from '../../components/page-title.component';
 import Paragraph from '../../components/paragraph.component';
 
-const Finished = () => {
+const Finished = ({ history }) => {
     return (
         <div className = 'template-div'>
         <PageTitle>a scroll</PageTitle>
@@ -16,7 +16,7 @@ const Finished = () => {
         <img src = {scroll} alt = "scroll" style = {{width:"60vw", borderRadius:"10px"}}></img>
         <CustomButton 
         passed = {true}
-        onClick = {() => console.log("download pdf")}
+        onClick = {() => history.push('/case-file')}
         successPara = "Do you pick it up?"
         ></CustomButton>
         </div>
