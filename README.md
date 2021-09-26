@@ -14,6 +14,6 @@ I created this website for an activity for PBMUKS Freshman Orientation Camp 2021
 
 
 # Technologies Used
-The web application was created using ReactJS. The components were styled using Sass.
+The web application was created using ReactJS. The components were styled using SCSS.
 
 Most of the components were created from scratch, exception is the crossword puzzle where I used a third party library. I could not find a good sudoku third party library so I created it from scratch.
