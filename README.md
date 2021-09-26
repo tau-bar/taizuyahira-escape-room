@@ -2,14 +2,14 @@
 I created this website for an activity for PBMUKS Freshman Orientation Camp 2021. The escape room has an Avatar theme, and follows the camp storyline.
 
 # Links to different stages
-Entry Page: https://taizuyahira-cave.herokuapp.com/
-Stage 1: https://taizuyahira-cave.herokuapp.com/crossroads
-Stage 2: https://taizuyahira-cave.herokuapp.com/mix-up
-Stage 3: https://taizuyahira-cave.herokuapp.com/a-message
-Stage 4: https://taizuyahira-cave.herokuapp.com/unforgiving-soul
-Stage 5: https://taizuyahira-cave.herokuapp.com/attachment-to-the-past
-Stage 6: https://taizuyahira-cave.herokuapp.com/quizaster
-Scroll: https://taizuyahira-cave.herokuapp.com/a-scroll
+* Entry Page: https://taizuyahira-cave.herokuapp.com/
+* Stage 1: https://taizuyahira-cave.herokuapp.com/crossroads
+* Stage 2: https://taizuyahira-cave.herokuapp.com/mix-up
+* Stage 3: https://taizuyahira-cave.herokuapp.com/a-message
+* Stage 4: https://taizuyahira-cave.herokuapp.com/unforgiving-soul
+* Stage 5: https://taizuyahira-cave.herokuapp.com/attachment-to-the-past
+* Stage 6: https://taizuyahira-cave.herokuapp.com/quizaster
+* Scroll: https://taizuyahira-cave.herokuapp.com/a-scroll
 
 
 
