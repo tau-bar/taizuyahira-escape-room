@@ -11,5 +11,9 @@ Stage 5: https://taizuyahira-cave.herokuapp.com/attachment-to-the-past
 Stage 6: https://taizuyahira-cave.herokuapp.com/quizaster
 Scroll: https://taizuyahira-cave.herokuapp.com/a-scroll
 
-# Explanation
+
+
+# Technologies Used
+The web application was created using ReactJS. The components were styled using Sass.
+
 Most of the components were created from scratch, exception is the crossword puzzle where I used a third party library. I could not find a good sudoku third party library so I created it from scratch.
